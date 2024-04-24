@@ -1,0 +1,66 @@
+footer {
+    background: #CD8C52;
+    color: #FFF;
+    padding: 5% 0;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.box .logo {
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+.box .logo img {
+    width: 100%;
+}
+
+.box p {
+    font-weight: 500;
+    font-size: 22px;
+}
+.navegue{
+    width: 10%;
+}
+.navegue h4 {
+    font-size: 20px;
+    margin-bottom: 4vh;
+}
+
+.navegue p {
+    font-size: 18px;
+}
+
+.fale-conosco h4 {
+    font-size: 20px;
+    margin-bottom: 4vh;
+}
+
+.fale-conosco .contato-btn {
+    display: flex;
+}
+
+.fale-conosco .contato-btn a {
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 0.5vw;
+    font-size: 18px;
+}
+
+.fale-conosco .contato-btn .icon-size {
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: #FFF;
+}

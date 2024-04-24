@@ -5,20 +5,25 @@ nav {
     height: 14vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
+
 nav .logo img {
     width: 100%;
 }
+
 .nav-list {
     display: flex;
     list-style-type: none;
 }
+
 .nav-list li {
     position: relative;
     letter-spacing: 3px;
     margin-left: 32px;
     color: #CD8C52;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
 }
+
 .nav-list li::before {
     content: "";
     position: absolute;
@@ -29,23 +34,26 @@ nav .logo img {
     background-color: #E8CAB1;
     transition: right 0.5s ease;
 }
+
 .nav-list li.active::before {
     right: 0;
 }
+
 .nav-list li:not(.active):hover::before {
     transition: right 0.8s ease;
 }
+
 .active::before {
     left: 0;
     right: 0;
 }
 
-.mobile-menu{
+.mobile-menu {
     cursor: pointer;
     display: none;
 }
 
-.mobile-menu div{
+.mobile-menu div {
     width: 32px;
     height: 2px;
     background: #CD8C52;

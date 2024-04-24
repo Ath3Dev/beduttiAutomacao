@@ -1,6 +1,6 @@
+import { useState, useEffect } from 'react';
 import logo from '../../assets/img/logo.svg';
 import './style.css';
-import { useState, useEffect } from 'react';
 
 export function Header() {
     const [activeItem, setActiveItem] = useState('INÍCIO');
@@ -9,7 +9,7 @@ export function Header() {
     const handleMouseOver = (item) => {
         setActiveItem(item);
     };
-
+    
     const handleMouseOut = () => {
         setActiveItem('INÍCIO');
     };
@@ -17,7 +17,7 @@ export function Header() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowMenu(true);
-        }, 300);
+        }, 1000);
 
         return () => clearTimeout(timer);
     }, []);
