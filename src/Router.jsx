@@ -5,11 +5,9 @@ import { Footer } from "./components/Footer";
 const Router = () => {
     return (
         <BrowserRouter>
-            <Header />
             <Routes>
                 
             </Routes>
-            <Footer />
         </BrowserRouter>
     )
 }

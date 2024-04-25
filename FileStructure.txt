@@ -1,0 +1,27 @@
+bedutti-Automacao
+│── .eslintrc.cjs
+│── .gitignore
+│── index.html
+│── package-lock.json
+│── package.json
+│── public
+│   └── favicon.svg
+│── README.md
+│── src
+│   │── App.css
+│   │── App.jsx
+│   │── assets
+│   │   └── img
+│   │       │── logo.svg
+│   │       └── whiteLogo.svg
+│   │── components
+│   │   │── Footer
+│   │   │   │── index.jsx
+│   │   │   └── style.css
+│   │   └── Header
+│   │       │── index.jsx
+│   │       └── style.css
+│   │── main.jsx
+│   │── pages
+│   └── Router.jsx
+└── vite.config.js

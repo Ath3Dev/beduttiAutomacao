@@ -14,10 +14,10 @@ export function Footer() {
                 </div>
                 <div className="flex-column font navegue">
                     <h4>Navegue</h4>
-                    <Link className="link">Início</Link>
+                    {/* <Link className="link">Início</Link>
                     <Link className="link">Serviços</Link>
                     <Link className="link">Parceiros</Link>
-                    <Link className="link">Contato</Link>
+                    <Link className="link">Contato</Link> */}
                 </div>
                 <div className="flex-column font fale-conosco">
                     <h4>Fale Conosco</h4>
