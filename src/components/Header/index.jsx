@@ -14,13 +14,9 @@ export function Header() {
         setActiveItem('INÍCIO');
     };
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowMenu(true);
-        }, 1000);
-
-        return () => clearTimeout(timer);
-    }, []);
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
 
     return (
         <header>
@@ -29,7 +25,7 @@ export function Header() {
                     <img src={logo} alt="logo" />
                 </div>
 
-                <div className="mobile-menu" onClick={() => setShowMenu(!showMenu)}>
+                <div className="mobile-menu" onClick={toggleMenu}>
                     <div className="line1"></div>
                     <div className="line2"></div>
                     <div className="line3"></div>
