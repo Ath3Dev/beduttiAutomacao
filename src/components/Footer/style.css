@@ -31,9 +31,11 @@ footer {
     font-weight: 500;
     font-size: 22px;
 }
-.navegue{
+
+.navegue {
     width: 10%;
 }
+
 .navegue h4 {
     font-size: 20px;
     margin-bottom: 4vh;
@@ -64,24 +66,43 @@ footer {
     font-size: 20px;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: #FFF;
     margin: 1vh 0;
 }
 
-footer hr{
+footer hr {
     width: 90vw;
     margin: 8vh 0 4vh 0;
     align-self: center;
 }
 
-footer .reserved{
+footer .reserved {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer .reserved .margin{
+footer .reserved .margin {
     margin-right: 1vw;
+}
+
+@media screen and (max-width: 999px) {
+    .d-flex {
+        flex-direction: column;
+        padding: 8vw;
+    }
+
+    .flex-column {
+        width: 100%;
+    }
+
+    .navegue {
+        display: none;
+    }
+
+    .fale-conosco h4{
+        margin-top: 5vh;
+    }
 }
