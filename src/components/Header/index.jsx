@@ -9,7 +9,7 @@ export function Header() {
     const handleMouseOver = (item) => {
         setActiveItem(item);
     };
-    
+
     const handleMouseOut = () => {
         setActiveItem('INÍCIO');
     };
@@ -37,19 +37,26 @@ export function Header() {
                 </div>
 
                 <ul className={`nav-list ${showMenu ? 'show' : ''}`}>
-                    {['INÍCIO', 'SERVIÇOS', 'PARCEIROS', 'SOBRE', 'CONTATO'].map((item, index) => (
+                    {[
+                        { label: 'INÍCIO', target: '#inicio' },
+                        { label: 'SERVIÇOS', target: '#servicos' },
+                        { label: 'PARCEIROS', target: '#parceiros' },
+                        { label: 'SOBRE', target: '#sobre' },
+                        { label: 'CONTATO', target: '#contato' }
+                    ].map((item, index) => (
                         <li
-                            key={item}
-                            onMouseOver={() => handleMouseOver(item)}
+                            key={item.label}
+                            onMouseOver={() => handleMouseOver(item.label)}
                             onMouseOut={handleMouseOut}
                             onClick={preventClick}
-                            className={activeItem === item ? 'active' : ''}
+                            className={activeItem === item.label ? 'active' : ''}
                             style={{ transitionDelay: `${index * 0.1}s` }}
                         >
-                            {item}
+                            <a href={item.target}>{item.label}</a>
                         </li>
                     ))}
                 </ul>
+
             </nav>
         </header>
     );

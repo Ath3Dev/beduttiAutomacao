@@ -19,9 +19,13 @@ nav .logo img {
     position: relative;
     letter-spacing: 3px;
     margin-left: 32px;
-    color: #CD8C52;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #CD8C52;
 }
 
 .nav-list li::before {
@@ -33,15 +37,11 @@ nav .logo img {
     height: 2px;
     background-color: #E8CAB1;
     transition: right 0.5s ease;
-    outline: none;
 }
 
-.nav-list li.active::before {
+.nav-list li.active::before,
+.nav-list li:hover::before {
     right: 0;
-}
-
-.nav-list li:not(.active):hover::before {
-    transition: right 0.8s ease;
 }
 
 .active::before {
@@ -69,10 +69,8 @@ nav .logo img {
     nav {
         position: fixed;
         width: 100%;
-        align-items: center;
-        justify-content: space-around;
         top: 0;
-        background: #FFF;
+        background: #f2f2f2;
     }
 
     .nav-list {
@@ -99,7 +97,11 @@ nav .logo img {
         margin-left: 0;
         opacity: 0;
         transition: opacity 0.5s ease;
+    }
+
+    .nav-list li a{
         color: #f2f2f2;
+        outline: transparent;
     }
     
     .nav-list.show li {
