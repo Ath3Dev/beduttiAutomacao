@@ -5,9 +5,7 @@ footer {
     color: #FFF;
     margin-top: 4vh;
     padding: 5% 0 2% 0;
-    position: absolute;
     width: 100%;
-    bottom: 0;
 }
 
 .d-flex {
@@ -92,6 +90,7 @@ footer .reserved .margin {
 }
 
 @media screen and (max-width: 999px) {
+
     .d-flex {
         flex-direction: column;
         padding: 8vw;
@@ -105,7 +104,7 @@ footer .reserved .margin {
         display: none;
     }
 
-    .fale-conosco h4{
+    .fale-conosco h4 {
         margin-top: 5vh;
     }
 }

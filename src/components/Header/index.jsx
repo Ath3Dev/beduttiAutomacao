@@ -18,6 +18,11 @@ export function Header() {
         setShowMenu(!showMenu);
     };
 
+    const preventClick = (e) => {
+        e.preventDefault();
+        setShowMenu(!showMenu)
+    }
+
     return (
         <header>
             <nav>
@@ -37,6 +42,7 @@ export function Header() {
                             key={item}
                             onMouseOver={() => handleMouseOver(item)}
                             onMouseOut={handleMouseOut}
+                            onClick={preventClick}
                             className={activeItem === item ? 'active' : ''}
                             style={{ transitionDelay: `${index * 0.1}s` }}
                         >
