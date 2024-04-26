@@ -1,17 +1,22 @@
-.home-container{
+.home-container {
     overflow: hidden;
 }
 
-.main-carousel .slider{
+.main-carousel {
+    margin-bottom: 15vh;
+}
+
+.main-carousel .slider {
     width: 100%;
     z-index: 1;
 }
 
-.slider img{
+.slider img {
     width: 100%;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -29,9 +34,9 @@
     transform: translate(-50%, -50%) rotate(0deg);
     width: 0;
     height: 0;
-    border-top: 12px solid transparent; 
-    border-bottom: 12px solid transparent; 
-    border-right: 16px solid #ffffff; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 16px solid #ffffff;
 }
 
 .slick-next:before {
@@ -39,12 +44,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg); 
+    transform: translate(-50%, -50%) rotate(0deg);
     width: 0;
     height: 0;
-    border-top: 12px solid transparent; 
-    border-bottom: 12px solid transparent; 
-    border-left: 16px solid #ffffff; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 16px solid #ffffff;
 }
 
 
@@ -56,6 +61,7 @@
     right: 20px;
 }
 
-.main-carousel:hover .slick-prev, .main-carousel:hover .slick-next {
+.main-carousel:hover .slick-prev,
+.main-carousel:hover .slick-next {
     display: block;
 }

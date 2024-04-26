@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom/dist';
 import logo from '../../assets/img/logo.svg';
 import './style.css';
 
@@ -18,10 +19,16 @@ export function Header() {
         setShowMenu(!showMenu);
     };
 
-    const preventClick = (e) => {
-        e.preventDefault();
-        setShowMenu(!showMenu)
-    }
+    const scrollToSection = (target) => {
+        if (target === '#inicio') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            const element = document.querySelector(target);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    };
 
     return (
         <header>
@@ -48,11 +55,11 @@ export function Header() {
                             key={item.label}
                             onMouseOver={() => handleMouseOver(item.label)}
                             onMouseOut={handleMouseOut}
-                            onClick={preventClick}
+                            onClick={() => scrollToSection(item.target)}
                             className={activeItem === item.label ? 'active' : ''}
                             style={{ transitionDelay: `${index * 0.1}s` }}
                         >
-                            <a href={item.target}>{item.label}</a>
+                            <Link to={item.target}>{item.label}</Link>
                         </li>
                     ))}
                 </ul>
