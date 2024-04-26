@@ -71,6 +71,7 @@ nav .logo img {
         width: 100%;
         top: 0;
         background: #f2f2f2;
+        z-index: 999999;
     }
 
     .nav-list {
