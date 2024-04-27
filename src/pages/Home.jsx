@@ -24,11 +24,21 @@ export function Home() {
         autoplaySpeed: 5000,
     };
     const settingsServices = {
-        dots: true,
+        dots: false,
         infinite: false,
         slidesToShow: 2.4,
         slidesToScroll: 1,
         autoplay: false,
+        swipeToSlide: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 999,
+                settings: {
+                    slidesToShow: 1.1,
+                }
+            }
+        ]
     }
 
     const servicesData = [
