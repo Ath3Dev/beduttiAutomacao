@@ -110,10 +110,12 @@
     background: #FFF;
     height: 10vh;
     border-radius: 0 0 10px 25px;
+    cursor: pointer;
 }
 
 .service-icon{
     font-size: 32px;
+    cursor: pointer;
 }
 
 .modal {
@@ -131,7 +133,7 @@
 
 .modal-content {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 50px;
     max-width: 60%;
 }
 

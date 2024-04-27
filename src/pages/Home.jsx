@@ -93,9 +93,9 @@ export function Home() {
                         {servicesData.map((service, index) => (
                             <div key={index} className="card-servico">
                                 <img src={service.image} alt={service.title} />
-                                <div className='font service-info'>
+                                <div className='font service-info' onClick={() => setSelectedService(service)} >
                                     {service.title}
-                                    <MdOutlineKeyboardArrowDown className="service-icon" onClick={() => setSelectedService(service)} />
+                                    <MdOutlineKeyboardArrowDown className="service-icon"/>
                                 </div>
                             </div>
                         ))}
