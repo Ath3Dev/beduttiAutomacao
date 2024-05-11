@@ -12,7 +12,6 @@ import servicesImage1 from '../assets/img/card-carousel/servicesImage1.svg';
 import servicesImage2 from '../assets/img/card-carousel/servicesImage2.svg';
 import servicesImage3 from '../assets/img/card-carousel/servicesImage3.svg';
 import servicesImage4 from '../assets/img/card-carousel/servicesImage4.svg';
-import imagemExemplo from '../assets/img/mobile-compliment/exemploImagem.png'
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 import '../assets/css/Home.css';
