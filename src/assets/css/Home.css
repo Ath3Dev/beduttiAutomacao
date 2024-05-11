@@ -3,7 +3,7 @@
 }
 
 .main-carousel {
-    margin-bottom: 9vh;
+    margin-bottom: 15vh;
 }
 
 .main-carousel .slider {
@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-.slider-mobile{
+.slider-mobile {
     display: none;
 }
 
@@ -168,20 +168,21 @@
 
 @media screen and (max-width: 999px) {
 
-    .main-carousel{
-        margin-top: 5vh;
+    .main-carousel {
+        margin-top: 4vh;
+        margin-bottom: 0;
     }
 
-    .slider-desktop{
+    .slider-desktop {
         display: none;
     }
 
-    .slider-mobile{
+    .slider-mobile {
         display: block;
     }
 
     .servicos {
-        padding-top: 15vh;    
+        padding-top: 15vh;
     }
 
     .orange-line {
@@ -200,4 +201,5 @@
     .modal-content {
         max-width: 100%;
     }
+
 }
