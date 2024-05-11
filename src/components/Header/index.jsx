@@ -22,10 +22,12 @@ export function Header() {
     const scrollToSection = (target) => {
         if (target === '#inicio') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+            setShowMenu(!showMenu);
         } else {
             const element = document.querySelector(target);
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
+                setShowMenu(!showMenu);
             }
         }
     };

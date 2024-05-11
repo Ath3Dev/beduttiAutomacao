@@ -15,6 +15,10 @@
     width: 100%;
 }
 
+.slider-mobile{
+    display: none;
+}
+
 .slick-prev,
 .slick-next {
     position: absolute;
@@ -41,7 +45,7 @@
 }
 
 .slick-next:before {
-    border-right: none; /* Alterado */
+    border-right: none;
     border-left: 16px solid #ffffff;
 }
 
@@ -65,7 +69,7 @@
     margin-bottom: 5vh;
 }
 
-.servicos .text h2{
+.servicos .text h2 {
     font-size: 1.4em;
     font-weight: 600;
     text-transform: uppercase;
@@ -80,28 +84,28 @@
     margin: 0 10px;
 }
 
-.card-carousel{
+.card-carousel {
     display: flex;
     justify-content: center;
 }
 
-.services-slider{
+.services-slider {
     width: 100%;
     padding: 40px;
 }
 
-.card-servico{
+.card-servico {
     width: 100%;
     padding-right: 30px;
     cursor: grab;
     outline: none;
 }
 
-.card-servico img{
+.card-servico img {
     width: 100%;
 }
 
-.service-info{
+.service-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -113,7 +117,7 @@
     cursor: pointer;
 }
 
-.service-icon{
+.service-icon {
     font-size: 32px;
     cursor: pointer;
 }
@@ -137,12 +141,12 @@
     max-width: 60%;
 }
 
-.modal-content .modal-text{
+.modal-content .modal-text {
     padding: 5vh;
 }
 
-.modal-content img{
-    width: 100% ;
+.modal-content img {
+    width: 100%;
 }
 
 .modal p {
@@ -163,17 +167,37 @@
 }
 
 @media screen and (max-width: 999px) {
-    .orange-line{
+
+    .main-carousel{
+        margin-top: 5vh;
+    }
+
+    .slider-desktop{
+        display: none;
+    }
+
+    .slider-mobile{
+        display: block;
+    }
+
+    .servicos {
+        padding-top: 15vh;    
+    }
+
+    .orange-line {
         width: 10vw;
     }
-    .services-slider{
+
+    .services-slider {
         width: 100%;
         padding: 10px;
     }
-    .modal{
+
+    .modal {
         top: 14vh;
     }
-    .modal-content{
+
+    .modal-content {
         max-width: 100%;
     }
 }

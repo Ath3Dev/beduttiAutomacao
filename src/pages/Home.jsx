@@ -5,6 +5,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import image from '../assets/img/main-carousel/caroussel-images.svg';
 import image2 from '../assets/img/main-carousel/image-caroussel-2.svg';
 import image3 from '../assets/img/main-carousel/image-caroussel-3.svg';
+import imageMobile from '../assets/img/main-carousel/image-carousselMobile.svg';
+import imageMobile2 from '../assets/img/main-carousel/image-carousselMobile-2.svg';
+import imageMobile3 from '../assets/img/main-carousel/image-carousselMobile-3.svg';
 import servicesImage1 from '../assets/img/card-carousel/servicesImage1.svg';
 import servicesImage2 from '../assets/img/card-carousel/servicesImage2.svg';
 import servicesImage3 from '../assets/img/card-carousel/servicesImage3.svg';
@@ -69,7 +72,7 @@ export function Home() {
     return (
         <div className="home-container">
             <div className="main-carousel">
-                <Slider {...settings} className='slider'>
+                <Slider {...settings} className='slider slider-desktop'>
                     <div>
                         <img src={image} alt="Imagem 1" />
                     </div>
@@ -80,10 +83,21 @@ export function Home() {
                         <img src={image3} alt="Imagem 3" />
                     </div>
                 </Slider>
+                <Slider {...settings} className='slider slider-mobile'>
+                    <div>
+                        <img src={imageMobile} alt="Imagem 1" />
+                    </div>
+                    <div>
+                        <img src={imageMobile2} alt="Imagem 2" />
+                    </div>
+                    <div>
+                        <img src={imageMobile3} alt="Imagem 3" />
+                    </div>
+                </Slider>
             </div>
 
             <div className="servicos" id='servicos'>
-                <div className="text">
+                <div className="text" >
                     <div className="orange-line"></div>
                     <h2 className='font'>Nossos Serviços</h2>
                     <div className="orange-line"></div>
@@ -114,6 +128,8 @@ export function Home() {
                     </div>
                 )}
             </div>
+
+            
 
         </div>
     );
