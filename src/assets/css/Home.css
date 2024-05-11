@@ -166,6 +166,10 @@
     background-color: darkorange;
 }
 
+.mobile-complement{
+    display: none;
+}
+
 @media screen and (max-width: 999px) {
 
     .main-carousel{
@@ -200,4 +204,8 @@
     .modal-content {
         max-width: 100%;
     }
+    .mobile-complement{
+        display: block;
+    }
+
 }

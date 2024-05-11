@@ -12,6 +12,7 @@ import servicesImage1 from '../assets/img/card-carousel/servicesImage1.svg';
 import servicesImage2 from '../assets/img/card-carousel/servicesImage2.svg';
 import servicesImage3 from '../assets/img/card-carousel/servicesImage3.svg';
 import servicesImage4 from '../assets/img/card-carousel/servicesImage4.svg';
+import imagemExemplo from '../assets/img/mobile-compliment/exemploImagem.png'
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 import '../assets/css/Home.css';
@@ -94,6 +95,10 @@ export function Home() {
                         <img src={imageMobile3} alt="Imagem 3" />
                     </div>
                 </Slider>
+            </div>
+
+            <div className="mobile-complement">
+                <img src={imagemExemplo} alt="" />
             </div>
 
             <div className="servicos" id='servicos'>
