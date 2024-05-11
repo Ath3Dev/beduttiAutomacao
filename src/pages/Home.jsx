@@ -97,10 +97,6 @@ export function Home() {
                 </Slider>
             </div>
 
-            <div className="mobile-complement">
-                <img src={imagemExemplo} alt="" />
-            </div>
-
             <div className="servicos" id='servicos'>
                 <div className="text" >
                     <div className="orange-line"></div>
