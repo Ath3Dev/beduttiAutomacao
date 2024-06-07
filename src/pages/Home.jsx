@@ -5,7 +5,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import { image, image2, image3, imageMobile, imageMobile2, imageMobile3 } from '../data/carousel-images';
 import servicesData from '../data/servicesData';
 import sobreCard from '../data/sobreCard'
+import partnersImages from '../data/partners-images'
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import partners from '../assets/img/partners.svg'
 
 import '../assets/css/Home.css';
 
@@ -134,6 +136,21 @@ export function Home() {
                             </a>
                         </div>
                     </div>
+                </div>
+
+            </div>
+
+            <div className="parceiros" id='parceiros'>
+                <div className="parceiros-imagem">
+                    <img src={partners} alt="" />
+                </div>
+
+                <div className="logo-parceiros">
+                    {partnersImages.map((logo, index) => (
+                        <div key={index} className="card-logoParceiros">
+                            <img src={logo.image} />
+                        </div>
+                    ))}
                 </div>
 
             </div>

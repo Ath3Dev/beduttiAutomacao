@@ -28,10 +28,11 @@ export function Footer() {
                     <h4>Navegue</h4>
                     <Link to="#inicio" onClick={() => scrollToSection('#inicio')} className="link">Início</Link>
                     <Link to="#servicos" onClick={() => scrollToSection('#servicos')} className="link">Serviços</Link>
+                    <Link to="#sobre" onClick={() => scrollToSection('#sobre')} className="link">Sobre</Link>
                     <Link to="#parceiros" onClick={() => scrollToSection('#parceiros')} className="link">Parceiros</Link>
                     <Link to="#contato" onClick={() => scrollToSection('#contato')} className="link">Contato</Link>
                 </div>
-                <div className="flex-column font fale-conosco">
+                <div className="flex-column font fale-conosco" id='contato'>
                     <h4>Fale Conosco</h4>
 
                     <div className="contato-btn">
