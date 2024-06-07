@@ -8,8 +8,14 @@
     font-size: 3rem;
 }
 
-.pageUp-icon{
+.pageUp-icon {
     background: white;
     border: 2px solid #CD8C52;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 999px) {
+    .ButtonPageUp {
+        display: none;
+    }
 }
