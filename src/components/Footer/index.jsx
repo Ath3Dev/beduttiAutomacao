@@ -36,7 +36,14 @@ export function Footer() {
 
                     <div className="contato-btn">
                         <FaWhatsapp className="icon-size" />
-                        <p><a target='_blank' rel='noreferrer' href="https://wa.me/5511988060205">+55 (11) 98806-0205</a></p>
+                        <p>
+                            <a
+                                target='_blank'
+                                rel='noreferrer'
+                                href="https://wa.me/5511988060205?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Bedutti%20Automa%C3%A7%C3%B5es.%20Tenho%20interesse%20em%20contratar%20seus%20servi%C3%A7os!">
+                                +55 (11) 98806-0205
+                            </a>
+                        </p>
                     </div>
                     <div className="contato-btn">
                         <FaLinkedin className="icon-size" />

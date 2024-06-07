@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
 * {
     margin: 0;
@@ -13,6 +14,10 @@ html {
 
 body {
     background: #F2F2F2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 main {
@@ -26,7 +31,42 @@ main {
     }
 }
 
+@font-face {
+    font-family: odin-bold;
+    src: url(/fonts/Odin\ Rounded\ -\ Bold.otf);
+}
+
+@font-face {
+    font-family: odin-light;
+    src: url(/fonts/Odin\ Rounded\ -\ Light.otf);
+}
+
+@font-face {
+    font-family: kirvy-bold;
+    src: url(/fonts/Kirvy-Bold.otf);
+}
+
+@font-face {
+    font-family: kirvy-light;
+    src: url(/fonts/Kirvy-Light.otf);
+}
 
 .font {
     font-family: "Montserrat", sans-serif;
+}
+
+.font2 {
+    font-family: odin-bold;
+}
+
+.font3 {
+    font-family: odin-light;
+}
+
+.font4 {
+    font-family: kirvy-bold;
+}
+
+.font5 {
+    font-family: kirvy-light;
 }
