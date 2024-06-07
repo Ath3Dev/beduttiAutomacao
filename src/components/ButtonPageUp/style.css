@@ -1,0 +1,15 @@
+.ButtonPageUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #CD8C52;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 3rem;
+}
+
+.pageUp-icon{
+    background: white;
+    border: 2px solid #CD8C52;
+    border-radius: 50%;
+}

@@ -1,14 +1,20 @@
 import { useState } from 'react';
+// Importação de componentes
+import { ButtonPageUp } from '../components/ButtonPageUp';
+// Importações das bibliotecas para carrossel
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+// Importações dos conteudos da pasta data
 import { image, image2, image3, imageMobile, imageMobile2, imageMobile3 } from '../data/carousel-images';
 import servicesData from '../data/servicesData';
 import sobreCard from '../data/sobreCard'
 import partnersImages from '../data/partners-images'
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+// Importação de imagem
 import partners from '../assets/img/partners.svg'
-
+// Importação de icone
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+// Importação de CSS
 import '../assets/css/Home.css';
 
 export function Home() {
@@ -23,10 +29,10 @@ export function Home() {
     };
     const settingsServices = {
         dots: false,
-        infinite: false,
+        infinite: true,
         slidesToShow: 2.4,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         swipeToSlide: true,
         arrows: false,
         responsive: [
@@ -154,7 +160,7 @@ export function Home() {
                 </div>
 
             </div>
-
+            <ButtonPageUp />
         </div>
     );
 }
